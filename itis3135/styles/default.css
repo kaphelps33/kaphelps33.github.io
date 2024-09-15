@@ -1,0 +1,96 @@
+body {
+  font-size: 16px;
+  font-family: "Libre Baskerville", serif;
+  margin: 0;
+  padding: 0 20px;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header,
+main,
+footer {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  border-bottom: 2px solid #ccc;
+  text-align: center;
+  padding-top: 40px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+nav {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 5px;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #555;
+}
+
+.active {
+  color: #000;
+  border-bottom: 2px solid #555;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+main {
+  flex: 1;
+  margin-bottom: 10px;
+}
+
+ul {
+  text-align: left;
+}
+
+main p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+footer {
+  background-color: #f1f1f1;
+  border-top: 2px solid #ccc;
+  text-align: center;
+  padding-top: 20px;
+}
+
+footer nav a {
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+footer small {
+  display: block;
+  margin-top: 10px;
+  color: #666;
+}
