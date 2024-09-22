@@ -19,6 +19,10 @@ footer {
   margin: 0 auto;
 }
 
+figure {
+  text-align: center;
+}
+
 header {
   border-bottom: 2px solid #ccc;
   text-align: center;
