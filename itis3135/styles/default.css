@@ -49,6 +49,20 @@ nav a {
   padding-bottom: 5px;
 }
 
+a {
+  color: #333;
+  padding-bottom: 5px;
+}
+
+a:hover {
+  color: slateblue;
+}
+
+h3 {
+  font-size: 1rem;
+  text-align: center;
+}
+
 nav a:hover {
   border-bottom: 2px solid #555;
 }
