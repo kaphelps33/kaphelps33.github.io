@@ -119,3 +119,101 @@ strong {
   font-family: "Copperplate", Georgia, Times, serif;
   font-size: 20px;
 }
+
+figure table {
+  border-collapse: collapse;
+  width: 100%;
+}
+figure th,
+figure td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+figure th {
+  background-color: #4caf50;
+  color: white;
+}
+/* alternating row colors */
+figure tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+figure tr:nth-child(odd) {
+  background-color: #fff;
+}
+/* first row darker */
+figure tr:first-child th {
+  background-color: #333;
+}
+
+/* ===== styling for the form ===== */
+form {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  width: 60%;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* styles for the input elements */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+/* adjusting the checkbox and radio fieldset areas */
+fieldset {
+  border: none;
+  margin-bottom: 10px;
+}
+
+fieldset label {
+  display: inline;
+}
+
+/* better buttons */
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* button hover effect - change colors */
+button:hover {
+  background-color: #555;
+}
+
+input:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* better contrast in the placeholder text */
+::placeholder {
+  color: #888;
+}

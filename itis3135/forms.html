@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ACCUMULUS SCRIPT -->
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./styles/default.css">
+  <title>Kelsey Phelps - ITIS 3135 - Home</title>
+</head>
+
+<body>
+  <div data-include="./components/header.html"></div>
+  <main>
+    <h2>Forms</h2>
+    <form action="#">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required placeholder="Enter your name"><br>
+      <label for="telephone">Phone Number:</label>
+      <input type="tel" name="telephone" id="telephone" required placeholder="(555)867-5309"><br>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required placeholder="you@example.com"><br>
+      <fieldset>
+        <legend>Services of Interest</legend>
+        <input type="checkbox" name="services" id="service1" value="web_design">
+        <label for="service1">Web Design</label><br>
+        <input type="checkbox" id="service2" name="services" value="seo">
+        <label for="service2">SEO</label><br>
+        <input type="checkbox" id="service3" name="services" value="consulting">
+        <label for="service3">Consulting</label><br>
+      </fieldset><br>
+
+      <fieldset>
+        <legend>Preferred Contact Method:</legend>
+        <input type="radio" id="contact-email" name="contact-method" value="email" required>
+        <label for="contact_email">Email</label><br>
+        <input type="radio" id="contact-phone" name="contact-method" value="phone">
+        <label for="contact_phone">Phone</label><br>
+        <input type="radio" id="contact-text" name="contact-method" value="text">
+        <label for="contact_text">Text Message</label><br>
+      </fieldset><br>
+
+      <label for="budget">Budget Range:</label>
+      <select id="budget" name="budget" required>
+        <option value="">Select your budget</option>
+        <option value="low">$500 - $1000</option>
+        <option value="medium">$1000 - $5000</option>
+        <option value="high">$5000+</option>
+      </select><br><br>
+
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <div data-include="./components/footer.html"></div>
+  <script src="./scripts/include.js"></script>
+</body>
+
+</html>

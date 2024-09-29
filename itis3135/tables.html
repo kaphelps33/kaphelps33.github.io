@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ACCUMULUS SCRIPT -->
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./styles/default.css">
+  <title>Kelsey Phelps - ITIS 3135 - Home</title>
+</head>
+
+<body>
+  <div data-include="./components/header.html"></div>
+  <main>
+    <h2>HTML Tables</h2>
+    <h3>My Tabular Data</h3>
+    <ol>
+      <li>John Doe johndoe@gmail.com 5</li>
+      <li>Jane Doe janedoe@aol.com 9</li>
+      <li>Johnny Appleseed japple@icloud.com 15</li>
+      <li>Craig Miller cmiller@gmail.com 9</li>
+      <li>Jamie Smith jsmith1@gmail.com 1</li>
+      <li>Jeff White jeff@jeffsrestorations.com 18</li>
+      <li>John Watson jwatson@elementary.com 22</li>
+    </ol>
+    <h3>Employee Data in Simple Table</h3>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Years Of Service</th>
+      </tr>
+      <tr>
+        <td>John Doe</td>
+        <td>johndoe@gmail.com</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>Jane Doe</td>
+        <td>janedoe@aol.com</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>Johnny Appleseed</td>
+        <td>japple@icloud.com</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td>Craig Miller</td>
+        <td>cmiller@gmail.com</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>Jamie Smith</td>
+        <td>jsmith1@gmail.com</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Jeff White</td>
+        <td>jeff@jeffsrestorations.com</td>
+        <td>18</td>
+      </tr>
+      <tr>
+        <td>John Watson</td>
+        <td>jwatson@elementary.com</td>
+        <td>22</td>
+      </tr>
+    </table>
+    <hr>
+    <h3>Employee Data in Complex Table</h3>
+    <figure>
+      <figcaption>Employee Information</figcaption>
+      <table>
+        <tr>
+          <th>Department</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Years of Service</th>
+          <th>Monthly Salary</th>
+        </tr>
+        <tr>
+          <td rowspan="2">Marketing</td>
+          <td headers="Name">John Doe</td>
+          <td headers="Email">johndoe@gmail.com</td>
+          <td headers="Years of Service">5</td>
+          <td headers="Salary">$4,500</td>
+        </tr>
+        <tr>
+          <td headers="Name">Jane Does</td>
+          <td headers="Email">janedoe@aol.com</td>
+          <td headers="Years of Service">9</td>
+          <td headers="Salary">$5,000</td>
+        </tr>
+        <tr>
+          <td rowspan="3">Sales</td>
+          <td headers="Name">Johnny Appleseed</td>
+          <td headers="Email">japple@icloud.com</td>
+          <td headers="Years of Service">15</td>
+          <td headers="Salary">$6,500</td>
+        </tr>
+        <tr>
+          <td headers="Name">Craig Miller</td>
+          <td headers="Email">cmiller@gmail.com</td>
+          <td headers="Years of Service">9</td>
+          <td headers="Salary">$5,800</td>
+        </tr>
+        <tr>
+          <td headers="Name">Jamie Smith</td>
+          <td headers="Email">jsmith1@gmail.com</td>
+          <td headers="Years of Service">1</td>
+          <td headers="Salary">$3,500</td>
+        </tr>
+        <tr>
+          <td rowspan="2">IT</td>
+          <td headers="Name">Jeff White</td>
+          <td headers="Email">jeff@jeffsrestorations.com</td>
+          <td headers="Years of Service">18</td>
+          <td headers="Salary">$4,200</td>
+        </tr>
+        <tr>
+          <td headers="Name">John Watson</td>
+          <td headers="Email">jwatson@elementary.com</td>
+          <td headers="Years of Service">22</td>
+          <td headers="Salary">$4,800</td>
+        </tr>
+        <tr>
+          <th colspan="3">Total Years of Service</th>
+          <td headers="Total Years">79</td>
+          <td headers="Total Salary">$34,300</td>
+        </tr>
+      </table>
+    </figure>
+  </main>
+  <div data-include="./components/footer.html"></div>
+  <script src="./scripts/include.js"></script>
+</body>
+
+</html>
