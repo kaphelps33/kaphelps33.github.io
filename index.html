@@ -4,43 +4,96 @@
 <head>
   <title>Kelsey Phelps - ITIS 3135 - Site Gateway</title>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
   <style>
     body {
-      font-family: Tahoma, sans-serif;
-      text-align: justify;
-      background-color: #121212;
-      color: #fff;
+      font-family: 'Tahoma', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      line-height: 1.8;
+      margin: 0;
+      padding: 0;
     }
 
     header,
     main,
     footer {
+      box-sizing: border-box;
       width: 95%;
       max-width: 1200px;
       margin: 0 auto;
+      padding: 1rem;
     }
 
-    header,
-    footer,
-    figure,
-    h2 {
+    header {
+      background-color: #e0f7fa;
+      padding: 1rem;
       text-align: center;
     }
 
+    h1,
+    h2 {
+      color: #00796b;
+    }
+
+    hr {
+      border: 1px solid #00796b;
+    }
+
+    section {
+      padding: 1rem;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1.5rem;
+    }
+
+    footer {
+      padding: 2rem;
+      background-color: #e0f7fa;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 0.5rem;
+      padding: 0.5rem;
+      text-decoration: none;
+      color: #00796b;
+      background-color: #b2dfdb;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #00796b;
+      color: #fff;
+    }
+
     img {
-      border: 5px black solid;
+      border: 5px solid #00796b;
+      max-width: 100%;
+      height: auto;
     }
 
     a {
-      color: wheat;
+      color: #0288d1;
+      text-decoration: none;
+      border-bottom: 2px solid #0288d1;
+      transition: color 0.3s ease;
     }
 
     a:hover {
-      color: orangered;
+      color: #ff5722;
+      border-bottom-color: #ff5722;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        font-size: 90%;
+      }
     }
   </style>
-  <!-- ACCUMULUS SCRIPT -->
-  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -51,61 +104,37 @@
   <main>
     <h2>Site Gateway</h2>
     <section>
-      <p>
-        <strong>Personal Background: </strong>I have lived in Charlotte my
-        whole life and I have been at UNCC for two years. I like to run, read,
-        and I enjoy anything involving music and can play multiple
-        instruments. I enjoy learning new things especially languages, math,
-        and science.
-      </p>
-      <p>
-        <strong>Professional Background: </strong>I have worked since I was 18
-        years old at a surveying firm. I have done thousands of land surveys
-        in both North and South Carolina and have tons of experience in
-        AutoCAD.
-      </p>
-      <p>
-        <strong>Academic Background: </strong>I graduated from CPCC with my
-        Associates in Arts degree focused on mathematics in 2022. Now I
-        graduate this semester with by BS in computer science, concentration
-        in software, systems, and networks with the intent of going to medical
-        school.
-      </p>
-      <p>
-        <strong>Programming/Software Background: </strong>I have the most
-        experience with Java and C. I have used Python, JavaScript, C++, and
-        Swift a lot. I do have experience with both HTML and CSS and also with
-        the React framework. I turn VIM keybindings on for everything that I
-        possibly can.
-      </p>
-      <p><strong>Primary Computer Platform: </strong>MacOS</p>
-      <p><strong>Courses I'm taking and why: </strong></p>
-      <ul>
-        <li>
-          <strong>ITIS 3135 - Web App Design and Development: </strong>I liked
-          designing web applications in my software engineering class and I
-          wanted to further my knowledge.
-        </li>
-        <li>
-          <strong>ITSC 4155 - Software Development Projects: </strong>I need
-          the class to graduate, it is my capstone project.
-        </li>
-      </ul>
-      <p>Funny/interesting Item to Remember Me by: I can solve a Rubix cube in under 30 seconds (17 is my best).</p>
+      <h3>Personal Background</h3>
+      <p>I have lived in Charlotte my whole life and I have been at UNCC for two
+        years. I enjoy running, reading, and anything involving music. I play multiple instruments and love learning,
+        especially languages, math, and science.</p>
+
+      <p>I’ve worked at a surveying firm since I was 18, performing thousands
+        of land surveys across North and South Carolina. I have extensive experience using AutoCAD.</p>
+
+      <h3>Academic Background</h3>
+      <p>I graduated from CPCC with an Associate in Arts degree focused on
+        mathematics in 2022. I’m graduating this semester with a BS in Computer Science, focusing on software, systems,
+        and networks, with plans to attend medical school. I currently hold a 4.0 GPA and have made the chancellors list
+        every semester throughout my time at university. I am currently studying for the MCAT while also finishing my
+        senior year.</p>
+
+      <h4>Programming/Software Background</h4>
+      <p>I am most proficient in Java and C. I also have experience
+        with Python, JavaScript, C++, and Swift. Additionally, I have worked, and am currently working with, with HTML,
+        CSS, and the React framework. I
+        enable VIM keybindings whenever possible.</p>
     </section>
     <hr>
   </main>
   <footer>
     <p>Here are some useful links, thank you</p>
     <nav>
-      <!-- LINK TO ITIS 3135 PAGE -->
-      <a href="itis3135" target="_blank">ITIS3135 Course Site</a>|
-      <!-- LINK TO GITHUB COURSE SITE -->
-      <a href="https://kaphelps33.github.io/" target="_blank">GitHub.io</a>|
-      <!-- LINK TO GITHUB PROFILE -->
+      <a href="itis3135" target="_blank">ITIS3135 Course Site</a> |
+      <a href="https://kaphelps33.github.io/" target="_blank">GitHub.io</a> |
       <a href="https://github.com/kaphelps33" target="_blank">GitHub</a>
     </nav>
-    <small>Page Built By: <a href="./phelpsventures.co/index.html">Phelps Ventures</a> © 2024 <a
+    <small>Page Built By: <a href="./phelpsventures.co/index.html">Phelps Ventures</a> © 2024 | <a
         href="https://www.freecodecamp.org/certification/kphelps9/responsive-web-design" target="_blank">Certified in
         Responsive Web Design</a></small>
   </footer>
