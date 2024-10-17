@@ -15,7 +15,7 @@ header,
 main,
 footer {
   width: 100%;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -57,8 +57,19 @@ a {
 a:hover {
   color: slateblue;
 }
+h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
 
 h3 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+h4 {
   font-size: 1rem;
   text-align: center;
 }
@@ -72,20 +83,20 @@ nav a:hover {
   border-bottom: 2px solid #555;
 }
 
-h2 {
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
 main {
   flex: 1;
   margin-bottom: 10px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 ul {
   text-align: left;
+}
+
+li {
+  font-size: 1.1rem;
 }
 
 main p {
@@ -216,4 +227,63 @@ input[type="radio"] {
 /* better contrast in the placeholder text */
 ::placeholder {
   color: #888;
+}
+
+/* For tablets and larger phones */
+@media (max-width: 768px) {
+  body {
+    padding: 0 10px;
+  }
+
+  form {
+    width: 80%;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  select {
+    font-size: 0.9em;
+  }
+}
+
+/* For small screens like phones */
+@media (max-width: 480px) {
+  body {
+    padding: 0 5px;
+  }
+
+  nav a {
+    margin: 0 5px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  select {
+    padding: 8px 4px;
+    font-size: 0.8em;
+  }
+}
+
+/* For larger screens */
+@media (min-width: 1200px) {
+  body {
+    padding: 0 40px;
+  }
+
+  form {
+    width: 50%;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  select {
+    font-size: 1.2em;
+  }
 }
