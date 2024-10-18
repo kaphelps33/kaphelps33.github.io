@@ -287,3 +287,19 @@ input[type="radio"] {
     font-size: 1.2em;
   }
 }
+
+.basic-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.basic-table th,
+table td {
+  padding: 8px;
+  border: 1px solid black;
+  text-align: left;
+}
+
+.basic-table th {
+  font-weight: bold;
+}
