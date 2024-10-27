@@ -137,6 +137,8 @@ function displayData() {
   displayArea.appendChild(resetLink);
 }
 
+document.getElementById("form-container").appendChild(createForm());
+
 document.getElementById("intro-form").onsubmit = function (event) {
   if (!this.checkValidity()) {
     event.preventDefault();
@@ -146,5 +148,3 @@ document.getElementById("intro-form").onsubmit = function (event) {
     displayData();
   }
 };
-
-document.getElementById("form-container").appendChild(createForm());
