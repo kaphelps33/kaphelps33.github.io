@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ACCUMULUS SCRIPT -->
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./styles/default.css">
+  <title>Kelsey Phelps - ITIS 3135 - First Scripts</title>
+</head>
+
+<body>
+  <div data-include="./components/header.html"></div>
+  <main>
+    <h2>First Scripts Page</h2>
+    <h3 id="date-time"></h3>
+    <section>
+      <form id="user-form">
+        <fieldset>
+          <legend>User Information</legend>
+          <label for="user-name">What is your name?</label>
+          <input type="text" id="user-name">
+
+          <label for="user-mood">How are you feeling today?</label>
+          <input type="text" id="user-mood">
+
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+      <h3 id="user-greeting"></h3>
+    </section>
+    <section>
+      <form id="number-form">
+        <fieldset>
+          <legend>Favorite Number</legend>
+          <label for="favorite-number">Enter your favorite number.</label>
+          <input type="number" name="favorite-number" id="favorite-number">
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </section>
+    <section>
+      <label for="derivative">Find the derivative of x<sup>2</sup></label>
+      <button id="derivative">Derivative</button>
+
+      <label for="integral">Find the definite integral of f(x) = x<sup>2</sup> from a to b</label>
+      <button id="integral">Integral</button>
+
+      <label for="integral">Finds the factorial of a non negative integer</label>
+      <button id="factorial">Factorial</button>
+
+      <label for="sieve">This function generates all prime numbers up to a given limit using the Sieve of Eratosthenes
+        algorithm.</label>
+      <button id="sieve">Sieve</button>
+
+      <label for="fibonacci">This function generates the Fibonacci sequence up to a specified number of terms.</label>
+      <button id="fibonacci">Fibonacci</button>
+
+    </section>
+  </main>
+  <div data-include="./components/footer.html"></div>
+  <script src="./scripts/firstScripts.js"></script>
+  <script src="./scripts/include.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <style>
+    /* Basic Page Styling */
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background-color: #1a1a1a;
+      /* Dark, space-like background */
+      color: #00ffff;
+      /* Neon teal text color */
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      margin: 0 auto;
+    }
+
+    /* Header Styling */
+    header {
+      background: linear-gradient(45deg, #ff00ff, #00ffff);
+      color: #000;
+      text-align: center;
+      padding: 20px 0;
+      box-shadow: 0px 0px 20px #00ffff;
+    }
+
+    h1 {
+      font-size: 3rem;
+      text-transform: uppercase;
+      margin: 0;
+      text-shadow: 2px 2px 10px #ff00ff;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #ff66ff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1.2rem;
+      text-shadow: 1px 1px 5px #ff00ff;
+    }
+
+    nav a:hover {
+      color: #00ffff;
+      text-shadow: 2px 2px 8px #00ffff;
+    }
+
+    /* Main Content Styling */
+    main {
+      padding: 20px;
+      background-color: #2a2a2a;
+      margin: 20px auto;
+      max-width: 1200px;
+      border: 3px solid #ff00ff;
+      box-shadow: 0px 0px 20px #00ffff;
+    }
+
+    section {
+      display: none;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #ff66ff;
+      border-bottom: 2px solid #00ffff;
+      padding-bottom: 5px;
+    }
+
+    p {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    /* Figure Styling */
+    figure {
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    img {
+      max-width: 100%;
+      border: 2px solid #ff00ff;
+      box-shadow: 0px 0px 15px #ff00ff;
+    }
+
+    figcaption {
+      font-style: italic;
+      color: #ffccff;
+    }
+
+    blockquote {
+      margin: 20px 0;
+      padding: 10px;
+      background-color: #333;
+      color: #00ffff;
+      border-left: 5px solid #ff00ff;
+      font-style: italic;
+      text-shadow: 1px 1px 5px #00ffff;
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: #000;
+      color: #00ffff;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+      border-top: 2px solid #ff00ff;
+    }
+
+    footer a {
+      color: #ff66ff;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+
+    footer a:hover {
+      color: #00ffff;
+    }
+  </style> -->
+  <!-- Include MathJax for rendering equations -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+
+  <head>
+    <h1>Synthesizers</h1>
+    <nav>
+      <a href="#" onclick="showSection('home')">Home</a> |
+      <a href="#" onclick="showSection('about')">About</a> |
+      <a href="#" onclick="showSection('times')">Best Times</a> |
+      <a href="#" onclick="showSection('locations')">Best Locations</a> |
+      <a href="#" onclick="showSection('how')">How to Start</a> |
+      <a href="#" onclick="showSection('why')">Why I Love It</a>
+    </nav>
+  </head>
+  <main>
+    <section id="home" class="active">
+      <h2>Home</h2>
+      <p>A synthesize, or sometimes just called a synth, is an electronic musical instrument that generates sounds via
+        waveforms.</p>
+      <figure>
+        <img src="./images/Synth-group.jpg" alt="A group of synthesizes, the front being a Roland Juno 60">
+        <figcaption>These a just a few of the synthesizers used in popular music of yesterday, and today. In the very
+          front you can see a roland Juno 60, used on popular songs such as <em>Take on me</em> by a-ha</figcaption>
+      </figure>
+      <p>The synthesizer is one of the most important instruments in the history of music, still being used in every
+        genre of music today.</p>
+      <blockquote cite="https://www.hup.harvard.edu/books/9780674016170">the only innovation that can stand alongside
+        the electric guitar as a great new instrument of the age
+        of electricity ... Both led to new forms of music, and both had massive popular appeal. - Analog Days
+      </blockquote>
+      <blockquote cite="https://www.factmag.com/2016/09/15/14-most-important-synths/">
+        The synthesizer is as important, and as ubiquitous, in modern music today as the human voice. - Fact, 2016
+      </blockquote>
+    </section>
+    <section id="about">
+      <h2>About</h2>
+      <p>A synthesizer is an electronic device that generates sound through the manipulation of electrical signals. This
+        process can be understood scientifically through the lens of waveforms, signal processing, and acoustics.</p>
+      <h3>A Scientific Explanation</h3>
+      <h4>1. The Basics of Sound Synthesis</h4>
+      <p>At its core, sound is a vibration that travels through a medium (like air) and is interpreted by our ears as
+        pressure waves. These waves can be represented mathematically as functions of time, often using sine and cosine
+        functions to describe the waveforms. A synthesizer takes advantage of this by generating and manipulating
+        electrical signals to create a wide range of sounds. These signals can then be amplified and converted into
+        sound waves by a speaker.</p>
+
+      <h4>2. Waveforms: The Building Blocks</h4>
+      <p>The primary waveforms used in synthesizers are:</p>
+
+      <h4>Sine Wave</h4>
+      <figure>
+        <img src="./images/sine-wave.gif" alt="An animation of a sine way">
+      </figure>
+      <p>The purest form of sound, represented mathematically as:</p>
+      <div class="equation">
+        $$y(t) = A \sin(2 \pi f t + \phi)$$
+      </div>
+      <p>Where:</p>
+      <ul>
+        <li>\( A \) is the amplitude (volume)</li>
+        <li>\( f \) is the frequency (pitch)</li>
+        <li>\( t \) is time</li>
+        <li>\( \phi \) is the phase shift</li>
+      </ul>
+
+      <h4>Square Wave</h4>
+      <figure>
+        <img src="./images/square-wave.gif" alt="An animation of a square wave">
+      </figure>
+      <p>Characterized by its sharp transitions between high and low values, represented by a Fourier series:</p>
+      <div class="equation">
+        $$y(t) = \frac{4}{\pi} \sum_{n=1,3,5,...}^{\infty} \frac{1}{n} \sin(2 \pi n f t)$$
+      </div>
+
+      <h4>Sawtooth Wave</h4>
+      <figure>
+        <a title="Lucas Vieira, CC BY-SA 3.0 &lt;http://creativecommons.org/licenses/by-sa/3.0/&gt;, via Wikimedia Commons"
+          href="https://commons.wikimedia.org/wiki/File:Synthesis_sawtooth.gif"><img alt="Synthesis sawtooth"
+            src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Synthesis_sawtooth.gif?20130815204345"></a>
+      </figure>
+
+      <p>Known for its ramp-like shape, expressed as:</p>
+      <div class="equation">
+        $$y(t) = \frac{2}{\pi} \sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n} \sin(2 \pi n f t)$$
+      </div>
+
+      <h4>Triangle Wave</h4>
+      <p>Similar to a sine wave but with additional harmonics:</p>
+      <div class="equation">
+        $$y(t) = \frac{8}{\pi^2} \sum_{n=1,3,5,...}^{\infty} \frac{(-1)^{(n-1)/2}}{n^2} \sin(2 \pi n f t)$$
+      </div>
+
+      <h4>3. Filters: Shaping the Sound</h4>
+      <p>Synthesizers use filters to modify raw sounds. A simple low-pass filter (LPF) can be represented as:</p>
+      <div class="equation">
+        $$H(f) = \frac{1}{1 + j \frac{f}{f_c}}$$
+      </div>
+      <p>Where:</p>
+      <ul>
+        <li>\( H(f) \) is the filter's response</li>
+        <li>\( f \) is the frequency</li>
+        <li>\( f_c \) is the cutoff frequency</li>
+        <li>\( j \) is the imaginary unit</li>
+      </ul>
+
+      <h4>4. Modulation: Adding Complexity</h4>
+      <p>Synthesizers introduce complexity through modulation techniques like Amplitude Modulation (AM):</p>
+      <div class="equation">
+        $$y(t) = [1 + m \cdot \sin(2 \pi f_m t)] \cdot \sin(2 \pi f_c t)$$
+      </div>
+      <p>Where:</p>
+      <ul>
+        <li>\( f_c \) is the carrier frequency</li>
+        <li>\( f_m \) is the modulating frequency</li>
+        <li>\( m \) is the modulation index</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <a href="../phelpsventures.co/index.html">Phelps Ventures</a>
+  </footer>
+  <script src="./scripts/navigation.js"></script>
+</body>
+
+</html>
