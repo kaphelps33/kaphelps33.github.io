@@ -4,133 +4,172 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- <style>
+  <title>Synthesizers</title>
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  <style>
     /* Basic Page Styling */
     body {
-      font-family: 'Orbitron', sans-serif;
-      background-color: #1a1a1a;
-      /* Dark, space-like background */
-      color: #00ffff;
-      /* Neon teal text color */
+      font-family: 'Georgia', serif;
+      background-color: #fafafa;
+      color: #333;
       margin: 0;
       padding: 0;
       line-height: 1.6;
+      max-width: 1200px;
       margin: 0 auto;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
     }
 
     /* Header Styling */
     header {
-      background: linear-gradient(45deg, #ff00ff, #00ffff);
+      background: linear-gradient(90deg, #c1c1c1, #ededed);
       color: #000;
       text-align: center;
-      padding: 20px 0;
-      box-shadow: 0px 0px 20px #00ffff;
+      padding: 30px 0;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      font-family: 'Baskerville', serif;
     }
 
     h1 {
-      font-size: 3rem;
+      font-size: 2.8rem;
       text-transform: uppercase;
       margin: 0;
-      text-shadow: 2px 2px 10px #ff00ff;
+      letter-spacing: 2px;
+      color: #222;
     }
 
     nav {
-      margin-top: 10px;
+      margin-top: 15px;
     }
 
     nav a {
-      color: #ff66ff;
+      color: #666;
       text-decoration: none;
-      margin: 0 10px;
-      font-size: 1.2rem;
-      text-shadow: 1px 1px 5px #ff00ff;
+      margin: 0 15px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
     }
 
     nav a:hover {
-      color: #00ffff;
-      text-shadow: 2px 2px 8px #00ffff;
+      color: #222;
     }
 
     /* Main Content Styling */
     main {
       padding: 20px;
-      background-color: #2a2a2a;
-      margin: 20px auto;
-      max-width: 1200px;
-      border: 3px solid #ff00ff;
-      box-shadow: 0px 0px 20px #00ffff;
-    }
-
-    section {
-      display: none;
-    }
-
-    section.active {
-      display: block;
+      background-color: #fff;
+      margin: 20px 0;
+      border: 1px solid #ddd;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     }
 
     h2 {
       font-size: 2rem;
-      color: #ff66ff;
-      border-bottom: 2px solid #00ffff;
+      color: #333;
+      border-bottom: 3px solid #333;
       padding-bottom: 5px;
+      margin-bottom: 1rem;
+      font-family: 'Baskerville', serif;
+    }
+
+    h3 {
+      font-size: 1.6rem;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+
+    h4 {
+      font-size: 1.4rem;
+      color: #777;
+      margin: 1rem 0 0.5rem;
+      font-weight: bold;
     }
 
     p {
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-family: 'Georgia', serif;
+      font-size: 1.1rem;
+      margin: 1rem 0;
+      color: #444;
+      line-height: 1.8;
     }
 
     /* Figure Styling */
     figure {
       margin: 20px 0;
       text-align: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
     }
 
     img {
-      max-width: 100%;
-      border: 2px solid #ff00ff;
-      box-shadow: 0px 0px 15px #ff00ff;
+      max-width: 50%;
+      height: auto;
+      object-fit: cover;
+      border: 1px solid #ddd;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
     }
 
     figcaption {
       font-style: italic;
-      color: #ffccff;
+      color: #555;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
     }
 
+    /* Blockquote Styling */
     blockquote {
       margin: 20px 0;
-      padding: 10px;
-      background-color: #333;
-      color: #00ffff;
-      border-left: 5px solid #ff00ff;
+      padding: 10px 20px;
+      background-color: #f7f7f7;
+      color: #666;
+      border-left: 5px solid #333;
       font-style: italic;
-      text-shadow: 1px 1px 5px #00ffff;
     }
 
     /* Footer Styling */
     footer {
-      background-color: #000;
-      color: #00ffff;
+      background-color: #333;
+      color: #fff;
       text-align: center;
-      padding: 10px 0;
-      margin-top: 20px;
-      border-top: 2px solid #ff00ff;
+      padding: 15px 0;
+      margin-top: 30px;
+      font-size: 0.9rem;
+      border-top: 1px solid #666;
     }
 
     footer a {
-      color: #ff66ff;
+      color: #fff;
       text-decoration: none;
-      font-size: 1.1rem;
+      font-weight: bold;
     }
 
     footer a:hover {
-      color: #00ffff;
+      color: #ddd;
     }
-  </style> -->
-  <!-- Include MathJax for rendering equations -->
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    a {
+      color: #007BFF;
+      text-decoration: none;
+      transition: color 0.3s, text-shadow 0.3s;
+    }
+
+    a:hover {
+      color: #0056b3;
+      text-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+
+    a:visited {
+      color: #6f42c1;
+    }
+
+    a:active {
+      color: #0056b3;
+    }
+  </style>
 </head>
 
 <body>
@@ -138,18 +177,18 @@
   <head>
     <h1>Synthesizers</h1>
     <nav>
-      <a href="#" onclick="showSection('home')">Home</a> |
-      <a href="#" onclick="showSection('about')">About</a> |
-      <a href="#" onclick="showSection('times')">Best Times</a> |
-      <a href="#" onclick="showSection('locations')">Best Locations</a> |
-      <a href="#" onclick="showSection('how')">How to Start</a> |
-      <a href="#" onclick="showSection('why')">Why I Love It</a>
+      <a href="#home">Home</a> |
+      <a href="#what">What</a> |
+      <a href="#when">When</a> |
+      <a href="#where">Where</a> |
+      <a href="#how">How</a> |
+      <a href="#why">Why</a>
     </nav>
   </head>
   <main>
-    <section id="home" class="active">
+    <section id="home">
       <h2>Home</h2>
-      <p>A synthesize, or sometimes just called a synth, is an electronic musical instrument that generates sounds via
+      <p>A synthesizer, or sometimes just called a synth, is an electronic musical instrument that generates sounds via
         waveforms.</p>
       <figure>
         <img src="./images/Synth-group.jpg" alt="A group of synthesizes, the front being a Roland Juno 60">
@@ -166,94 +205,331 @@
         The synthesizer is as important, and as ubiquitous, in modern music today as the human voice. - Fact, 2016
       </blockquote>
     </section>
-    <section id="about">
-      <h2>About</h2>
+
+    <section id="what">
+      <h2>What</h2>
       <p>A synthesizer is an electronic device that generates sound through the manipulation of electrical signals. This
         process can be understood scientifically through the lens of waveforms, signal processing, and acoustics.</p>
-      <h3>A Scientific Explanation</h3>
-      <h4>1. The Basics of Sound Synthesis</h4>
       <p>At its core, sound is a vibration that travels through a medium (like air) and is interpreted by our ears as
         pressure waves. These waves can be represented mathematically as functions of time, often using sine and cosine
         functions to describe the waveforms. A synthesizer takes advantage of this by generating and manipulating
         electrical signals to create a wide range of sounds. These signals can then be amplified and converted into
         sound waves by a speaker.</p>
-
-      <h4>2. Waveforms: The Building Blocks</h4>
-      <p>The primary waveforms used in synthesizers are:</p>
-
-      <h4>Sine Wave</h4>
-      <figure>
-        <img src="./images/sine-wave.gif" alt="An animation of a sine way">
-      </figure>
-      <p>The purest form of sound, represented mathematically as:</p>
-      <div class="equation">
-        $$y(t) = A \sin(2 \pi f t + \phi)$$
-      </div>
-      <p>Where:</p>
-      <ul>
-        <li>\( A \) is the amplitude (volume)</li>
-        <li>\( f \) is the frequency (pitch)</li>
-        <li>\( t \) is time</li>
-        <li>\( \phi \) is the phase shift</li>
-      </ul>
-
-      <h4>Square Wave</h4>
-      <figure>
-        <img src="./images/square-wave.gif" alt="An animation of a square wave">
-      </figure>
-      <p>Characterized by its sharp transitions between high and low values, represented by a Fourier series:</p>
-      <div class="equation">
-        $$y(t) = \frac{4}{\pi} \sum_{n=1,3,5,...}^{\infty} \frac{1}{n} \sin(2 \pi n f t)$$
-      </div>
-
-      <h4>Sawtooth Wave</h4>
-      <figure>
-        <a title="Lucas Vieira, CC BY-SA 3.0 &lt;http://creativecommons.org/licenses/by-sa/3.0/&gt;, via Wikimedia Commons"
-          href="https://commons.wikimedia.org/wiki/File:Synthesis_sawtooth.gif"><img alt="Synthesis sawtooth"
-            src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Synthesis_sawtooth.gif?20130815204345"></a>
-      </figure>
-
-      <p>Known for its ramp-like shape, expressed as:</p>
-      <div class="equation">
-        $$y(t) = \frac{2}{\pi} \sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n} \sin(2 \pi n f t)$$
-      </div>
-
-      <h4>Triangle Wave</h4>
-      <p>Similar to a sine wave but with additional harmonics:</p>
-      <div class="equation">
-        $$y(t) = \frac{8}{\pi^2} \sum_{n=1,3,5,...}^{\infty} \frac{(-1)^{(n-1)/2}}{n^2} \sin(2 \pi n f t)$$
-      </div>
-
-      <h4>3. Filters: Shaping the Sound</h4>
-      <p>Synthesizers use filters to modify raw sounds. A simple low-pass filter (LPF) can be represented as:</p>
-      <div class="equation">
-        $$H(f) = \frac{1}{1 + j \frac{f}{f_c}}$$
-      </div>
-      <p>Where:</p>
-      <ul>
-        <li>\( H(f) \) is the filter's response</li>
-        <li>\( f \) is the frequency</li>
-        <li>\( f_c \) is the cutoff frequency</li>
-        <li>\( j \) is the imaginary unit</li>
-      </ul>
-
-      <h4>4. Modulation: Adding Complexity</h4>
-      <p>Synthesizers introduce complexity through modulation techniques like Amplitude Modulation (AM):</p>
-      <div class="equation">
-        $$y(t) = [1 + m \cdot \sin(2 \pi f_m t)] \cdot \sin(2 \pi f_c t)$$
-      </div>
-      <p>Where:</p>
-      <ul>
-        <li>\( f_c \) is the carrier frequency</li>
-        <li>\( f_m \) is the modulating frequency</li>
-        <li>\( m \) is the modulation index</li>
-      </ul>
     </section>
+
+    <section id="when">
+      <h2>When</h2>
+      <h3>Synthesizers the instrument of yesterday, today, and tomorrow</h3>
+      <div>
+        <h4>1897: The Telharmonium</h4>
+        <p>The Telharmonium, invented by Thaddeus Cahill, was the first electronic instrument and a precursor to the
+          synthesizer. This large, complex machine created sound by generating electrical signals and converting them
+          into sound through telephone receivers.</p>
+        <figure>
+          <a href="https://en.wikipedia.org/wiki/Telharmonium#/media/File:Teleharmonium1897.jpg" target="_blank"><img
+              src="./images/Teleharmonium1897.jpg" alt="The first synth, the Telharmonium"></a>
+          <caption>The Teleharmonum console</caption>
+        </figure>
+      </div>
+      <div>
+        <h4>1920s: The Theremin</h4>
+        <p>Invented by Russian physicist Leon Theremin, the Theremin was an early electronic instrument controlled
+          without physical contact. It generated eerie, continuous tones and became popular in experimental and film
+          music.</p>
+        <figure>
+          <a href="https://en.wikipedia.org/wiki/Theremin#/media/File:Theramin-Alexandra-Stepanoff-1930.jpg"
+            target="_blank"><img src="./images/Theramin-Alexandra-Stepanoff-1930.jpg"
+              alt="Alexandra Stepanoff playing a Theramin"></a>
+          <caption>Alexandra Stepanogg playing a Theramin</caption>
+        </figure>
+      </div>
+      <div>
+        <h4>1964: The Moog Synthesizer</h4>
+        <p>Dr. Robert Moog introduced the Moog synthesizer, a modular, analog instrument that offered musicians the
+          ability to shape sounds with oscillators, filters, and envelope controllers. Its portability and ease of use
+          helped bring synthesizers into mainstream music.</p>
+        <figure>
+          <a href="https://en.wikipedia.org/wiki/Moog_synthesizer#/media/File:Bob_Moog3.jpg" target="_blank"><img
+              src="./images/Bob_Moog3.jpg" alt="Bob Moog next to a moog in the '70s"></a>
+          <caption>Bob Moog next to his Moog in the '70s</caption>
+        </figure>
+      </div>
+      <div>
+        <h4>1970s: Polyphonic Synthesizers</h4>
+        <p>As synthesizer technology advanced, companies like Yamaha and Oberheim introduced polyphonic synthesizers,
+          allowing musicians to play multiple notes at once. This development was pivotal for the instrument's use in
+          pop and rock music.</p>
+        <figure>
+          <a href="https://commons.wikimedia.org/wiki/File:Sequential_Prophet_10_Rev_4.png" target="_blank"><img
+              src="./images/Sequential_Prophet_10_Rev_4.png" alt="A Sequential Circuits Prophet 10 Rev 4"></a>
+          <figcaption>A Sequential Circuits Prophet 10 Rev 4</figcaption>
+        </figure>
+      </div>
+      <div>
+        <h4>1980s: The Digital Revolution</h4>
+        <p>The Yamaha DX7, the first commercially successful digital synthesizer, brought FM synthesis to the masses.
+          Digital synthesizers became the foundation of 1980s pop music, leading to iconic sounds in genres from new
+          wave to synthpop.</p>
+        <figure>
+          <a href="" target="_blank"><img src="./images/Yamaha_DX7_synthesizer.jpg"
+              alt="A top and side view of a Yamaha DX-7"></a>
+          <figcaption>A top and side view of a Yamaha DX-7</figcaption>
+        </figure>
+      </div>
+      <div>
+        <h4>1990s-Present: Virtual and Software Synthesizers</h4>
+        <p>With the rise of powerful computers, virtual synthesizers emerged, allowing musicians to create synthesized
+          sounds using software. Today, synthesizers are integral to music across genres, available in both hardware and
+          software forms.</p>
+      </div>
+    </section>
+
+    <section id="where">
+      <h2>Where</h2>
+      <h3>Where to find, experience, and learn about synthesizers</h3>
+      <h4>Learning</h4>
+      <p>To learn about synthesizers you must first learn about <em>synthesis</em>. A great, modern resource for this is
+        <a href="https://www.syntorial.com/">Syntorial</a>, a website that teaches you to make synth patches by ear.
+      </p>
+      <h4>Your first synth</h4>
+      <p>Your first synth should probably free, digital one instead of a $2,000+, 30lbs analog beast. Here are some that
+        I can recommend:</p>
+      <ul>
+        <li><a href="https://vital.audio/">Vital</a> - This is a digital wavetable synth that will give you digital
+          sounds.</li>
+        <li><a href="https://www.discodsp.com/obxd/">OB-Xd</a> - This is an analog emulation of the Oberheim OB-X</li>
+      </ul>
+      <h4>Growing up</h4>
+      <p>Once you have spent some time mastering the free tools, you can begin to look into the high quality stuff such
+        as:</p>
+      <ul>
+        <li><a href="https://xferrecords.com/products/serum/">Serum</a> - A fantastic, industry staple that will never
+          steer you wrong.</li>
+        <li><a href="https://u-he.com/products/diva/">Diva</a> - A <em>beautiful</em> analog modeling synth that creates
+          the most amazing sounds you can get out of a computer. </li>
+        <li><a href="https://www.arturia.com/products/software-instruments/v-collection/overview">All of Arturia</a> -
+          The V collection is so high quality its best to wait until its on sale and get the whole pack for under $100.
+          You have thousands of hours worth of stuff just in this pack alone.</li>
+      </ul>
+      <h4>Lets get physical</h4>
+      <p>This is where you start getting into the physical synth hardware. Your research should be like your budget,
+        high.</p>
+      <h5>Analog Synthesizers</h5>
+      <figure>
+        <a href="https://sequential.com/2022/11/trigon-6-analog-poly-synth/"><img src="./images/Trigon-6-Main.jpg"
+            alt="A Trigon 6 by Sequential"></a>
+        <caption>A Trigon 6 by Sequential, an example of an analog synth</caption>
+      </figure>
+      <ul>
+        <li><strong>Sequential OB-6</strong> - A classic analog sound with a modern interface, around
+          <strong>$2,999</strong>.
+        </li>
+        <li><strong>Moog Subsequent 37</strong> - Known for thick, warm bass and leads, priced at around
+          <strong>$1,699</strong>.
+        </li>
+        <li><strong>Behringer Poly D</strong> - A budget-friendly option inspired by the Moog Model D, around
+          <strong>$799</strong>.
+        </li>
+      </ul>
+
+      <h5>Digital Synthesizers</h5>
+      <ul>
+        <li><strong>Roland JD-XA</strong> - A hybrid synth with both analog and digital engines, priced around
+          <strong>$2,499</strong>.
+        </li>
+        <li><strong>Yamaha Montage 8</strong> - Feature-packed, with a focus on performance and depth, at around
+          <strong>$4,299</strong>.
+        </li>
+        <li><strong>Korg Modwave</strong> - A modern digital synth inspired by wavetable synthesis, priced around
+          <strong>$799</strong>.
+        </li>
+      </ul>
+
+      <h5>Wavetable Synthesizers</h5>
+      <ul>
+        <li><strong>ASM Hydrasynth</strong> - Excellent modulation and sound design capabilities, at around
+          <strong>$1,299</strong>.
+        </li>
+        <li><strong>Elektron Digitone</strong> - A unique digital synth with FM and wavetable capabilities, around
+          <strong>$899</strong>.
+        </li>
+        <li><strong>Modal Electronics Argon8</strong> - Versatile, well-priced wavetable synth, at around
+          <strong>$849</strong>.
+        </li>
+      </ul>
+
+      <h4>Going Vintage</h4>
+      <p>If you're looking for iconic sounds, vintage synths deliver, but they come at a premium. These classics are
+        both pricey and often tricky to maintain. Here are some of the most sought-after vintage synths:</p>
+      <ul>
+        <li><strong>Roland Jupiter-8</strong> - Known for lush, full sounds, priced around <strong>$10,000+</strong> if
+          you can find one in good condition.</li>
+
+        <li><strong>Oberheim OB-Xa</strong> - Another classic used in countless 80s hits, usually going for around
+          <strong>$7,000</strong>.
+        </li>
+      </ul>
+
+      <h4>Grailed Synths</h4>
+      <p>These are the holy grails of the synth world. Often rare or highly modular, they are known for their unique
+        capabilities and are loved by serious sound designers.</p>
+      <ul>
+        <li><strong>Yamaha CS-80</strong> - A legendary analog synth made famous by Vangelis. Ever seen Blade Runner?
+          This is essentially the whole movie, with prices starting at
+          around <strong>$60,000+</strong>.</li>
+        <li><strong>Moog Model 55 Modular System</strong> - A reissued modular synth inspired by the 1970s classic,
+          priced around <strong>$35,000</strong>.</li>
+        <li><strong>Arp 2600c Grey Marvin 1971 </strong> - Only 34 ever made, modular, need I say more? Priced around
+          <strong>$60,000</strong>
+        </li>
+      </ul>
+      <p>This list only scratches the surface of the vast world of synthesizers. Each type, whether analog, digital,
+        wavetable, or modular, offers an incredible range of sounds and functionality, with endless possibilities for
+        experimentation and creativity. From boutique brands to vintage legends, the choices are nearly limitless, and
+        new innovations are constantly shaping the synth landscape. If you choose to go deeper, you’ll discover an
+        almost
+        endless amount (especially if you go modular) of synth types, effects, and modular components that can take your
+        music to the most beautiful or unchained places.
+        There’s always something new to explore in the world of synthesis.</p>
+    </section>
+
+    <section id="how">
+      <h2>How</h2>
+      <h3>How to Get the Most Out of Your Synthesizers</h3>
+      <h4>Assumptions</h4>
+      <p>This super brief guide is written in the hopes that you already have:</p>
+      <ol>
+        <li>Listed to synth music (be that '80s, synthwave, etc...) ever.</li>
+        <li>Have at least <em>some</em> understanding of music theory.</li>
+        <li>Possibly have experience playing the piano (will cut learning time in half).</li>
+        <li>Have a synth!</li>
+      </ol>
+
+      <h4>Avoid GAS!</h4>
+      <p>Gear Acquisition Syndrome (GAS) is a common phenomenon among musicians and synth enthusiasts, characterized by
+        an unquenchable thirst to acquire more equipment. While it's natural to want the latest synths and gear,
+        constantly chasing new items can lead to financial strain and distract from your primary goal: making music. To
+        combat GAS, start by focusing on mastering the tools you currently have. Take the time to explore all the
+        features of your synths and experiment with sound design, rather than immediately looking to purchase the next
+        creativity and expression, not just accumulating equipment. GAS can <em>ruin</em> the musical experience and has
+        for <em>a lot</em> of people. Don't be one of them!</p>
+
+      <h4>Understanding Signal Flow</h4>
+      <figure>
+        <a title="Synthesizer.components.01.png: Scriber
+derivative work: User:Clusternote, CC0, via Wikimedia Commons"
+          href="https://commons.wikimedia.org/wiki/File:Synthesizer.components.01.svg"><img width="1000"
+            alt="Synthesizer.components.01"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Synthesizer.components.01.svg/512px-Synthesizer.components.01.svg.png?20180225015552"></a>
+        <caption>A brief guide to signal flow</caption>
+      </figure>
+      <p>Before diving into sound design, it's crucial to grasp the basics of signal flow. Understanding how sound
+        travels through the different modules of your synth—oscillators, filters, envelopes, and effects—will empower
+        you to create unique sounds. Start with simple patches and gradually explore more complex routing to develop
+        your skills. (Refer to my writings above about learning synthesis)</p>
+
+      <h4>Experimenting with Patches</h4>
+      <p>Don’t hesitate to tweak presets and experiment with different parameters. Try adjusting oscillator waveforms,
+        filter cutoff, and modulation settings to see how they affect the sound. Remember, some of the best sounds come
+        from unexpected settings!</p>
+
+      <h4>Layering Sounds</h4>
+      <p>One effective technique in synthesizer sound design is layering multiple sounds together. This could involve
+        using two different synths or layering multiple instances of the same synth. Experiment with slightly detuning
+        them or using different waveforms to create a richer, fuller sound.</p>
+
+      <h4>Using MIDI Effectively</h4>
+      <p>MIDI is a powerful tool when it comes to controlling your synthesizers. Learn to use MIDI controllers and
+        sequencers to manipulate your sounds. You can automate parameters and create intricate patterns that add depth
+        to your compositions.</p>
+
+      <h4>Exploring Effects</h4>
+      <p>Don't overlook the impact of effects like reverb, delay, and distortion. These can dramatically change the
+        character of your sound. Invest time in learning how to effectively use these effects within your signal chain
+        to enhance your overall sound design.</p>
+
+      <h4>Joining Communities</h4>
+      <p>Engaging with online communities can significantly enhance your synthesizer journey. Platforms like <a
+          href="https://www.reddit.com/r/synthesizers/">Reddit's r/synthesizers</a> and forums such as <a
+          href="https://gearspace.com/">Gearspace</a> are great places to share your experiences, ask for advice, and
+        discover new techniques from fellow enthusiasts.</p>
+
+      <h4>Keeping Up with Trends</h4>
+      <p>The synthesizer world is always evolving, with new gear and techniques emerging regularly. Follow blogs,
+        YouTube channels, and social media influencers in the synth community to stay informed about the latest trends
+        and innovations.</p>
+
+      <h4>Experimenting with Different Genres</h4>
+      <p>Don’t limit yourself to one style of music. Experiment with synthesizers across various genres, from electronic
+        to ambient, to discover new sounds and techniques that inspire you. Each genre has its unique approach to sound
+        design that can enhance your creativity.</p>
+
+      <h4>Avoiding Snobbery</h4>
+      <p>So many people get so caught up in their synth "camps" and how they do things that they ruin it for everyone
+        else. Music is subjective, do what you want to do and what makes you happy. So many famous songs that inspire
+        everyone today were made using unorthodox techniques. Don't get so caught up in how its supposed to be done that
+        you forget why you do it in the first place.</p>
+    </section>
+
+    <section id="why">
+      <h2>Why</h2>
+      <h3>The Importance of Synthesizers in Music</h3>
+      <p>Synthesizers have revolutionized the music landscape, providing artists with endless creative possibilities.
+        They enable musicians to explore unique soundscapes and push the boundaries of traditional music genres. Whether
+        you're looking to create atmospheric pads, punchy basslines, or intricate melodies, synthesizers offer a
+        versatile toolkit for sonic experimentation.</p>
+      <h4>Creativity and Expression</h4>
+      <figure>
+        <img src="./images/pexels-muffinlandge-27007089.jpg" alt="A person messing with a synth">
+        <caption>A wild modular synthesizer</caption>
+      </figure>
+      <p>At their core, synthesizers empower musicians to express their individuality. By manipulating waveforms,
+        filters, and modulation, artists can craft sounds that resonate with their emotions and ideas. This level of
+        control encourages experimentation, leading to fresh and innovative compositions.</p>
+      <h4>Inclusion in Modern Music</h4>
+      <p>Today, synthesizers are integral to various music styles, from pop and electronic to hip-hop and film scoring.
+        They not only enhance production quality but also add a distinct character to tracks, making them more engaging
+        and memorable. The presence of synths in popular music has opened doors for new genres and collaborations,
+        bridging the gap between technology and artistry.</p>
+      <h4>Building a Community</h4>
+      <p>Engaging with synthesizers fosters a sense of community among musicians and enthusiasts. Whether through online
+        forums, social media, or local meetups, sharing knowledge, tips, and experiences can inspire growth and
+        collaboration. This network of like-minded individuals can be invaluable in your musical journey.</p>
+      <p>In conclusion, synthesizers are not just instruments; they are powerful tools that enhance creativity, shape
+        modern music, and connect people. Whether you're a seasoned musician or just starting, exploring synthesizers
+        can unlock new levels of artistic expression and enjoyment.</p>
+    </section>
+
+
   </main>
   <footer>
-    <a href="../phelpsventures.co/index.html">Phelps Ventures</a>
+    <p>Designed By: <a href="../phelpsventures.co/index.html">Phelps Ventures</a></p>
   </footer>
-  <script src="./scripts/navigation.js"></script>
+  <script>
+    // Select all the nav links
+    const navLinks = document.querySelectorAll("nav a");
+
+    // Function to scroll to the target section
+    function scrollToSection(event) {
+      event.preventDefault(); // Prevent default anchor behavior
+
+      // Get the href attribute, which matches the section ID
+      const targetId = event.currentTarget.getAttribute("href").substring(1);
+      const targetSection = document.getElementById(targetId);
+
+      // Smooth scroll to the target section
+      targetSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+
+    // Attach click event listeners to each nav link
+    navLinks.forEach((link) => {
+      link.addEventListener("click", scrollToSection);
+    });
+
+  </script>
 </body>
 
 </html>
