@@ -520,25 +520,21 @@ derivative work: User:Clusternote, CC0, via Wikimedia Commons"
     <p>Designed By: <a href="../phelpsventures.co/index.html">Phelps Ventures</a></p>
   </footer>
   <script>
-    // JavaScript for toggling sections based on navigation clicks
     document.addEventListener("DOMContentLoaded", () => {
       const sections = document.querySelectorAll(".content-section");
       const navLinks = document.querySelectorAll(".nav-link");
 
-      // Hide all sections except the selected one
       function showSection(sectionId) {
         sections.forEach(section => {
           section.style.display = section.id === sectionId ? "block" : "none";
         });
       }
 
-      // Set default section
       showSection("what");
 
-      // Add click event listeners to each navigation link
       navLinks.forEach(link => {
         link.addEventListener("click", (event) => {
-          event.preventDefault(); // Prevent default link behavior
+          event.preventDefault();
           const sectionId = link.getAttribute("data-section");
           showSection(sectionId);
         });
