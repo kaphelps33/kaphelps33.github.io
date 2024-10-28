@@ -173,6 +173,16 @@
     footer p {
       color: white;
     }
+
+    /* Hide all sections initially, except for the "what" section */
+    .content-section {
+      display: none;
+    }
+
+    /* Display the "what" section by default */
+    #what {
+      display: block;
+    }
   </style>
 </head>
 
@@ -181,16 +191,15 @@
   <head>
     <h1>Synthesizers</h1>
     <nav>
-      <a href="#home">Home</a> |
-      <a href="#what">What</a> |
-      <a href="#when">When</a> |
-      <a href="#where">Where</a> |
-      <a href="#how">How</a> |
-      <a href="#why">Why</a>
+      <a href="#" class="nav-link" data-section="what">Home</a> |
+      <a href="#" class="nav-link" data-section="when">When</a> |
+      <a href="#" class="nav-link" data-section="where">Where</a> |
+      <a href="#" class="nav-link" data-section="how">How</a> |
+      <a href="#" class="nav-link" data-section="why">Why</a>
     </nav>
   </head>
   <main>
-    <section id="home">
+    <section id="what" class="content-section">
       <h2>Home</h2>
       <p>A synthesizer, or sometimes just called a synth, is an electronic musical instrument that generates sounds via
         waveforms.</p>
@@ -208,10 +217,6 @@
       <blockquote cite="https://www.factmag.com/2016/09/15/14-most-important-synths/">
         The synthesizer is as important, and as ubiquitous, in modern music today as the human voice. - Fact, 2016
       </blockquote>
-    </section>
-
-    <section id="what">
-      <h2>What</h2>
       <p>A synthesizer is an electronic device that generates sound through the manipulation of electrical signals. This
         process can be understood scientifically through the lens of waveforms, signal processing, and acoustics.</p>
       <p>At its core, sound is a vibration that travels through a medium (like air) and is interpreted by our ears as
@@ -225,7 +230,7 @@
       </figure>
     </section>
 
-    <section id="when">
+    <section id="when" class="content-section">
       <h2>When</h2>
       <h3>Synthesizers the instrument of yesterday, today, and tomorrow</h3>
       <div>
@@ -292,7 +297,7 @@
       </div>
     </section>
 
-    <section id="where">
+    <section id="where" class="content-section">
       <h2>Where</h2>
       <h3>Where to find, experience, and learn about synthesizers</h3>
       <h4>Learning</h4>
@@ -401,7 +406,7 @@
         There’s always something new to explore in the world of synthesis.</p>
     </section>
 
-    <section id="how">
+    <section id="how" class="content-section">
       <h2>How</h2>
       <h3>How to Get the Most Out of Your Synthesizers</h3>
       <h4>Assumptions</h4>
@@ -479,7 +484,7 @@ derivative work: User:Clusternote, CC0, via Wikimedia Commons"
         you forget why you do it in the first place.</p>
     </section>
 
-    <section id="why">
+    <section id="why" class="content-section">
       <h2>Why</h2>
       <h3>The Importance of Synthesizers in Music</h3>
       <p>Synthesizers have revolutionized the music landscape, providing artists with endless creative possibilities.
@@ -514,27 +519,29 @@ derivative work: User:Clusternote, CC0, via Wikimedia Commons"
     <p>Designed By: <a href="../phelpsventures.co/index.html">Phelps Ventures</a></p>
   </footer>
   <script>
-    // Select all the nav links
-    const navLinks = document.querySelectorAll("nav a");
+    // JavaScript for toggling sections based on navigation clicks
+    document.addEventListener("DOMContentLoaded", () => {
+      const sections = document.querySelectorAll(".content-section");
+      const navLinks = document.querySelectorAll(".nav-link");
 
-    // Function to scroll to the target section
-    function scrollToSection(event) {
-      event.preventDefault(); // Prevent default anchor behavior
+      // Hide all sections except the selected one
+      function showSection(sectionId) {
+        sections.forEach(section => {
+          section.style.display = section.id === sectionId ? "block" : "none";
+        });
+      }
 
-      // Get the href attribute, which matches the section ID
-      const targetId = event.currentTarget.getAttribute("href").substring(1);
-      const targetSection = document.getElementById(targetId);
+      // Set default section
+      showSection("what");
 
-      // Smooth scroll to the target section
-      targetSection.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
+      // Add click event listeners to each navigation link
+      navLinks.forEach(link => {
+        link.addEventListener("click", (event) => {
+          event.preventDefault(); // Prevent default link behavior
+          const sectionId = link.getAttribute("data-section");
+          showSection(sectionId);
+        });
       });
-    }
-
-    // Attach click event listeners to each nav link
-    navLinks.forEach((link) => {
-      link.addEventListener("click", scrollToSection);
     });
 
   </script>
