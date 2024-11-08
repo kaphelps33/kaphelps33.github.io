@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ</title>
+  <link rel="stylesheet" href="styles/default.css">
+  <!-- ACCUMULUS SCRIPT -->
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <head>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="destinations.html" class="active">FAQ</a></li>
+      </ul>
+    </nav>
+  </head>
+  <main>
+    <h1>FAQ</h1>
+    <section class="faq-section">
+      <div class="faq-item">
+        <button class="faq-question">What is WanderWell?</button>
+        <div class="faq-answer">
+          <p>WanderWell is a travel service designed to help you discover and explore the world’s top destinations.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How can I book a trip?</button>
+        <div class="faq-answer">
+          <p>You can book a trip directly on our website. Visit our Destinations page, select your preferred location,
+            and follow the booking instructions.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Do you offer group discounts?</button>
+        <div class="faq-answer">
+          <p>Yes, we offer discounts for groups of 10 or more. Contact our support team for more details on group
+            booking rates.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 WanderWell. All Rights Reserved.</p>
+    <small>Page designed by <a href="../phelpsventures.co/index.html">Phelps Ventures</a></small>
+  </footer>
+  <script>
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const answer = button.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        button.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+
+</html>
