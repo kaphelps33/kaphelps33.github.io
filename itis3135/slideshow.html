@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ACCUMULUS SCRIPT -->
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./styles/default.css">
+  <title>Kelsey Phelps - ITIS 3135 - Slideshow</title>
+
+</head>
+
+<body>
+  <header>
+    <h1>Kelsey Phelps' Kempt Platypus || ITIS 3135</h1>
+    <nav id="main-nav"></nav>
+    <hr>
+    <nav id="sub-nav"></nav>
+    <strong>Elegantia praeteriti, legatum futurum</strong>
+    <br>
+    <small>"The elegance of the past, the legacy for the future"</small>
+  </header>
+
+  <main>
+    <h2>Slideshow</h2>
+    <section class="container">
+      <div class="slide">
+        <div class="number-text">1 / 6</div>
+        <img src="images/kitten.jpg" alt="A kitten">
+      </div>
+      <div class="slide">
+        <div class="number-text">2 / 6</div>
+        <img src="images/electric.jpg" alt="Lightning and a power pole">
+      </div>
+      <div class="slide">
+        <div class="number-text">3 / 6</div>
+        <img src="images/maze.jpg" alt="A Labyrinth">
+      </div>
+      <div class="slide">
+        <div class="number-text">4 / 6</div>
+        <img src="images/sacristy.jpg" alt="A room in a church for sacred objects">
+      </div>
+      <div class="slide">
+        <div class="number-text">5 / 6</div>
+        <img src="images/education.jpg" alt="A teacher and student">
+      </div>
+      <div class="slide">
+        <div class="number-text">6 / 6</div>
+        <img src="images/yacht.jpg" alt="A yacht">
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Thumbnail images -->
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="images/kitten.jpg" alt="A kitten">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/electric.jpg" alt="Lightning and a power pole">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/maze.jpg" alt="A Labyrinth">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/sacristy.jpg" alt="A room in a church for sacred objects">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/education.jpg" alt="A teacher and pupil">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/yacht.jpg" alt="A yacht">
+        </div>
+      </div>
+    </section>
+    <section>
+      <p>DeepAI used for all images. Prompts are as follows</p>
+      <ul>
+        <li>Kitten</li>
+        <li>Electricity</li>
+        <li>Labyrinth</li>
+        <li>Sacristy</li>
+        <li>Education</li>
+        <li>Yacht</li>
+      </ul>
+    </section>
+  </main>
+  <footer id="footer-container">
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./scripts/menuScript.js"></script>
+  <script src="./scripts/slideshow.js"></script>
+</body>
+
+</html>

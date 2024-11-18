@@ -1,0 +1,21 @@
+{
+    "intro_text": "Here are some useful links, thank you",
+    "links": [
+        {"name": "Charlotte.edu", "url": "https://webpages.charlotte.edu/kphelps9/"},
+        {"name": "GitHub.io", "url": "https://kaphelps33.github.io/"},
+        {"name": "GitHub", "url": "https://github.com/kaphelps33"},
+        {"name": "freeCodeCamp", "url": "https://www.freecodecamp.org/kphelps9"},
+        {"name": "Codecademy", "url": "https://www.codecademy.com/profiles/kphelps9"}
+    ],
+    "footer_note": "Page Built By: <a href='./phelpsventures.co/index.html'>Phelps Ventures</a> © 2024",
+    "certifications": [
+        {
+            "text": "Certified in Responsive Web Design",
+            "url": "https://www.freecodecamp.org/certification/kphelps9/responsive-web-design"
+        },
+        {
+            "text": "Certified in JS",
+            "url": "https://www.freecodecamp.org/certification/kphelps9/javascript-algorithms-and-data-structures-v8"
+        }
+    ]
+}
