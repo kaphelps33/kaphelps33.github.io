@@ -10,6 +10,6 @@
     {"name": "Project", "url": "./project/index.html"},
     {"name": "First Scripts", "url": "first_scripts.html"},
     {"name": "BYO Intro", "url": "byo_intro.html"},
-    {"name": "Drawing", "url": "drawing.html"}
+    {"name": "Drawing", "url": "drawing.html"},
     {"name": "Slideshow", "url": "slideshow.html"}
 ]
