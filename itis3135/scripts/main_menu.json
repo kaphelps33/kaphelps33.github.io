@@ -11,5 +11,7 @@
     {"name": "First Scripts", "url": "first_scripts.html"},
     {"name": "BYO Intro", "url": "byo_intro.html"},
     {"name": "Drawing", "url": "drawing.html"},
-    {"name": "Slideshow", "url": "slideshow.html"}
+    {"name": "Slideshow", "url": "slideshow.html"},
+    {"name": "Peer Review One", "url": "peer_review_1.html"},
+    {"name": "Peer Review Two", "url": "peer_review_2.html"}
 ]
