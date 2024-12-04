@@ -12,42 +12,64 @@
 
 <body>
 
-  <head>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="destinations.html" class="active">Destinations</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-      </ul>
-    </nav>
-  </head>
+  <div id="header"></div>
   <main>
     <section>
       <h1>Explore Our Top Destinations</h1>
       <p>Your next adventure awaits! Browse through our curated list of top travel spots and start planning.</p>
     </section>
 
-    <section class="text-section">
-      <article class="card">
+    <section class="slideshow">
+      <div class="slide active-slide">
         <img src="images/paris.jpg" alt="Eiffel Tower in Paris">
         <h2>Paris, France</h2>
         <p>The city of lights offers iconic landmarks, world-class cuisine, and unforgettable art and culture.</p>
-      </article>
-
-      <article class="card">
+        <button class="learn-more-btn button" data-destination="paris">Learn More</button>
+      </div>
+      <div class="slide">
         <img src="images/tokyo.jpeg" alt="Tokyo skyline">
         <h2>Tokyo, Japan</h2>
         <p>Experience the perfect blend of traditional temples and cutting-edge technology in this bustling metropolis.
         </p>
-      </article>
+        <button class="learn-more-btn button" data-destination="tokyo">Learn More</button>
+      </div>
+      <div class="slide">
+        <img src="images/barcelona.jpg" alt="Panoramic view of Barcelona">
+        <h2>Barcelona, Spain</h2>
+        <p>Barcelona, the vibrant capital of Catalonia, is renowned for its stunning architecture, Mediterranean
+          beaches, rich history, and lively cultural scene.
+        </p>
+        <button class="learn-more-btn button" data-destination="barcelona">Learn More</button>
+      </div>
     </section>
+
+    <div id="destination-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modal-title"></h2>
+        <img id="modal-image" src="modal-image-source" alt="modal-image-alt">
+        <p id="modal-description"></p>
+        <p id="modal-languages"></p>
+        <p id="modal-continent"></p>
+        <p id="modal-food"></p>
+        <div id="modal-top-things"></div>
+        <p id="modal-best-time"></p>
+        <p id="modal-transportation"></p>
+      </div>
+    </div>
+
+    <div class="navigation">
+      <button id="previous-button" class="button">&#10094; Previous</button>
+      <button id="next-button" class="button">Next &#10095;</button>
+    </div>
+    <button id="back-to-top">⬆ Back to Top</button>
   </main>
-  <footer>
-    <p>&copy; 2024 WanderWell. All Rights Reserved.</p>
-    <small>Page designed by <a href="../phelpsventures.co/index.html">Phelps Ventures</a></small>
-  </footer>
+  <div id="footer"></div>
+
+  <script src="./scripts/app.js"></script>
+  <script src="./scripts/slideshow.js"></script>
+  <script src="./scripts/modal.js"></script>
+  <script src="./scripts/backToTop.js"></script>
 </body>
 
 </html>

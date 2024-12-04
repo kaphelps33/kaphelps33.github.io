@@ -12,17 +12,7 @@
 
 <body>
 
-  <head>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="destinations.html">Destinations</a></li>
-        <li><a href="destinations.html" class="active">FAQ</a></li>
-      </ul>
-    </nav>
-  </head>
+  <div id="header"></div>
   <main>
     <h1>FAQ</h1>
     <section class="faq-section">
@@ -48,21 +38,37 @@
             booking rates.</p>
         </div>
       </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How do I contact you about planning?</button>
+        <div class="faq-answer">
+          <p>Simply fill out <a href="contact.html">this form</a> to start planning!</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How long before I get a response?</button>
+        <div class="faq-answer">
+          <p>In the busy months (May - August) it can take up to 2 business days. In all other months it will take up to
+            1 business day.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Do you have more destinations than the ones listed?</button>
+        <div class="faq-answer">
+          <p>Yes! Simply contact us with a destination and we will be able to help you plan your trip or point you in
+            the right direction.</p>
+        </div>
+      </div>
     </section>
+    <button id="back-to-top">⬆ Back to Top</button>
   </main>
-  <footer>
-    <p>&copy; 2024 WanderWell. All Rights Reserved.</p>
-    <small>Page designed by <a href="../phelpsventures.co/index.html">Phelps Ventures</a></small>
-  </footer>
-  <script>
-    document.querySelectorAll('.faq-question').forEach(button => {
-      button.addEventListener('click', () => {
-        const answer = button.nextElementSibling;
-        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
-        button.classList.toggle('active');
-      });
-    });
-  </script>
+
+  <div id="footer"></div>
+  <script src="./scripts/app.js"></script>
+  <script src="./scripts/faq.js"></script>
+  <script src="./scripts/backToTop.js"></script>
 </body>
 
 </html>
