@@ -11,12 +11,12 @@ const destinations = {
       "Visit the Eiffel Tower",
       "Explore the Louvre Museum",
       "Stroll along the Champs-Élysées",
-      "Cruise on the Seine River",
+      "Cruise on the Seine River"
     ],
     bestTimeToVisit:
       "April to June or September to November for mild weather and fewer crowds.",
     transportation:
-      "Metro, buses, and walking are the best ways to get around Paris.",
+      "Metro, buses, and walking are the best ways to get around Paris."
   },
   tokyo: {
     title: "Tokyo, Japan",
@@ -30,12 +30,12 @@ const destinations = {
       "Explore the Meiji Shrine",
       "Visit the historic Asakusa district",
       "Experience Shibuya Crossing",
-      "Enjoy cherry blossoms in Ueno Park",
+      "Enjoy cherry blossoms in Ueno Park"
     ],
     bestTimeToVisit:
       "March to May (cherry blossoms) or September to November (pleasant weather).",
     transportation:
-      "Efficient subway and train systems, plus taxis for convenience.",
+      "Efficient subway and train systems, plus taxis for convenience."
   },
   barcelona: {
     title: "Barcelona, Spain",
@@ -50,12 +50,12 @@ const destinations = {
       "Visit the Sagrada Família",
       "Stroll down La Rambla",
       "Explore Park Güell",
-      "Relax at Barceloneta Beach",
+      "Relax at Barceloneta Beach"
     ],
     bestTimeToVisit: "May to June or September to avoid summer crowds.",
     transportation:
-      "Metro, buses, and bicycles are excellent for getting around.",
-  },
+      "Metro, buses, and bicycles are excellent for getting around."
+  }
 };
 
 const modal = document.getElementById("destination-modal");
